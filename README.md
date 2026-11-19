@@ -15,7 +15,9 @@ Built with HTML, CSS and JavaScript, plus jQuery, Bootstrap, Jssor Slider and Li
 
 ## Tidied up for publishing (2026)
 
-The pages are kept as I built them. Before putting the project online I:
+The pages, slideshow, gallery and content are the ones I built. For publishing I added an iOS-style layer (`CSS/ios.css`) on top of the original stylesheets: system fonts, a frosted sticky navigation bar, context-menu dropdowns, rounded cards, and a layout that works on phones. I also:
+
+- rebuilt the navigation menu. The Departments link pointed nowhere and the ten department pages sat in a second-level menu that touch screens couldn't open. `js/ios.js` adds a phone menu and tap-to-open dropdowns.
 
 - added a banner making clear it's a student project, not the official site
 - removed things that didn't belong in a public repo: a bundled `ngrok.exe`, school calendar documents, a local Flask test server, screenshots and unused duplicate images
@@ -28,5 +30,6 @@ The pages are kept as I built them. Before putting the project online I:
 
 These are left as they were, since they're part of what I built then:
 
-- Fixed-width layout, not designed for phones
+- Content is laid out with HTML tables, which was common in tutorials at the time
+
 - A few decorative images referenced in the CSS were never added to the project
