@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Xavier College · Ba, Fiji</title>
+    <link rel="shortcut icon" href="Images/favicon1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/apple-theme.css">
+    <style>
+        .history-photos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .history-photo-card {
+            background: #ffffff;
+            border: 1px solid var(--apple-card-border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        .history-photo-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+        .history-photo-card p {
+            padding: 0.75rem 1rem;
+            font-size: 0.8rem;
+            color: var(--apple-text-tertiary);
+            text-align: center;
+        }
+        .contact-box {
+            background: #ffffff;
+            border: 1px solid var(--apple-card-border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--apple-card-shadow);
+        }
+        .contact-box-icon {
+            font-size: 1.5rem;
+            color: var(--apple-blue);
+            margin-bottom: 0.5rem;
+        }
+        .contact-box h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--apple-text-primary);
+            margin-bottom: 0.35rem;
+        }
+        .contact-box p {
+            font-size: 0.88rem;
+            color: var(--apple-text-secondary);
+        }
+        .map-frame-wrapper {
+            border: 1px solid var(--apple-card-border);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-link">
+                <img src="logo.jpg" alt="Xavier College Crest" class="brand-logo" onerror="this.src='Images/favicon1.jpg'">
+                <div class="brand-text">
+                    <span class="brand-name">Xavier College</span>
+                    <span class="brand-location">Ba, Fiji · Est. 1953</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="primary-nav" id="primaryNav">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="about.html" class="dropdown-link">The College & History</a></li>
+                            <li><a href="about.html#location" class="dropdown-link">Location & Map</a></li>
+                            <li><a href="about.html#contact" class="dropdown-link">Contact Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="DScience.html" class="nav-link">Departments <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown wide">
+                            <li><a href="DLanguage.html" class="dropdown-link ">Language</a></li>
+                            <li><a href="DMaths.html" class="dropdown-link ">Maths & Physics</a></li>
+                            <li><a href="DScience.html" class="dropdown-link ">Science</a></li>
+                            <li><a href="DSocial.html" class="dropdown-link ">Social Science</a></li>
+                            <li><a href="DHome.html" class="dropdown-link ">Home Economics</a></li>
+                            <li><a href="DComputer.html" class="dropdown-link ">Office Tech & Comp</a></li>
+                            <li><a href="DPemac.html" class="dropdown-link ">PEMAC</a></li>
+                            <li><a href="DIndustrial.html" class="dropdown-link ">Industrial Arts</a></li>
+                            <li><a href="DCommence.html" class="dropdown-link ">Commerce</a></li>
+                            <li><a href="DAgriculture.html" class="dropdown-link ">Agriculture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="achievements.html" class="nav-link">School Programmes</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="Resources.html" class="nav-link">Resources <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="Resources.html" class="dropdown-link">Ministry Portals</a></li>
+                            <li><a href="Resources.html#learning" class="dropdown-link">Online Learning Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="photos.html" class="nav-link">Gallery <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="photos.html#campus" class="dropdown-link">Campus</a></li>
+                            <li><a href="photos.html#memories" class="dropdown-link">Memories</a></li>
+                            <li><a href="photos.html#sports" class="dropdown-link">Inter-House</a></li>
+                            <li><a href="photos.html#awards" class="dropdown-link">Awards</a></li>
+                            <li><a href="photos.html#cadets" class="dropdown-link">Cadets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>About</span>
+            </nav>
+            <h1 class="page-title">About Xavier College</h1>
+            <p class="page-subtitle">A heritage of academic excellence, faith-centred values, and service in western Fiji since 1953.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+
+        <!-- History & Heritage Section -->
+        <article class="apple-card">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow">Our Heritage</span>
+                    <h2 class="card-title">College History & Foundation</h2>
+                </div>
+                <span style="font-size:0.8rem; color:var(--apple-gold); font-weight:600;">Est. 1953 · Ba, Fiji</span>
+            </div>
+
+            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.25rem;">
+                <strong>Xavier College</strong> was established in 1953 as a boys' secondary school by the Catholic Archdiocese of Suva to provide Christian education, particularly to the Indian youth in the western division of Fiji. It was entrusted to the Columban Fathers, whose vision established the school's enduring spirit of academic rigor and pastoral care.
+            </p>
+            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.25rem;">
+                In <strong>1970</strong>, co-education was introduced to adapt to the changing needs of the time, welcoming young women to study alongside young men in a shared pursuit of learning and leadership.
+            </p>
+            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.5rem;">
+                On <strong>January 1st, 2021</strong>, Xavier College, Ba was handed over from the Parish of Christ the King to the founding of a unique and multifaith charity arm called <em>‘From Mind to Heart’</em>, which continues to provide groceries, educational supplies, and humanitarian assistance to students and families in times of need.
+            </p>
+
+            <div class="history-photos-grid">
+                <div class="history-photo-card">
+                    <img src="Images/test5.jpg" alt="Xavier College Historical Campus">
+                    <p>Historical campus grounds of Xavier College, Ba</p>
+                </div>
+                <div class="history-photo-card">
+                    <img src="Images/test6.jpg" alt="College Buildings and Memorials">
+                    <p>College facilities and educational environment</p>
+                </div>
+            </div>
+
+            <h3 style="font-size:1.15rem; font-weight:700; margin:1.5rem 0 0.75rem;">St. Francis Xavier & Feast Day Traditions</h3>
+            <p style="font-size:0.98rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.25rem;">
+                On December 3rd, the school observed a historic milestone with its full celebration of the Feast Day of St. Francis Xavier. Francis Xavier was a 16th-century Spanish Jesuit missionary and one of the first seven companions of St. Ignatius of Loyola. He travelled extensively across Asia and died at Shangchuan Island in 1552, serving as the co-patron of Catholic missions worldwide.
+            </p>
+            <p style="font-size:0.98rem; color:var(--apple-text-secondary); line-height:1.75;">
+                The management and teaching staff, embracing students of diverse religious traditions, coordinated interfaith reflection, classroom presentations, floral tributes at his statue, and communal gatherings supported by the Parents and Friends Association and the Catholic community of Namosau.
+            </p>
+        </article>
+
+        <!-- Location & Directions with Real Google Map -->
+        <article class="apple-card" id="location">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow">Campus Geography</span>
+                    <h2 class="card-title">Location & Campus Map</h2>
+                </div>
+                <a href="https://maps.google.com/maps?q=-17.5330558,177.6684241&hl=en&z=15" target="_blank" rel="noopener" class="btn-apple-secondary" style="font-size:0.8rem;">Open in Google Maps ↗</a>
+            </div>
+
+            <p style="font-size:0.95rem; color:var(--apple-text-secondary); line-height:1.6; margin-bottom:1rem;">
+                Xavier College is situated in <strong>Namosau, Ba, Fiji</strong>, easily accessible to students and families across the Ba district and neighboring western settlements.
+            </p>
+
+            <div class="map-frame-wrapper">
+                <iframe 
+                    title="Xavier College Ba Fiji Location Map"
+                    src="https://maps.google.com/maps?q=-17.5330558,177.6684241&hl=en&z=15&output=embed" 
+                    width="100%" 
+                    height="380" 
+                    style="border:0; display:block;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <p style="font-size:0.78rem; color:var(--apple-text-tertiary); margin-top:0.6rem; text-align:center;">
+                Coordinates: -17.5330558, 177.6684241 · Namosau, Ba, Fiji
+            </p>
+        </article>
+
+        <!-- Contact Cards Section -->
+        <article class="apple-card" id="contact">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow">Administration</span>
+                    <h2 class="card-title">Contact Information</h2>
+                </div>
+                <span style="font-size:0.85rem; color:var(--apple-text-secondary);">Office Hours: Mon – Fri (8:00 AM – 4:00 PM)</span>
+            </div>
+
+            <div class="grid-3">
+                <div class="contact-box">
+                    <div class="contact-box-icon">✉</div>
+                    <h4>Email Inquiries</h4>
+                    <p><a href="mailto:xaviercollege198@gmail.com">xaviercollege198@gmail.com</a></p>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-box-icon">☎</div>
+                    <h4>Telephone</h4>
+                    <p>+679 667 0342</p>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-box-icon">📍</div>
+                    <h4>Postal Address</h4>
+                    <p>Namosau, Ba, Fiji Islands</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Xavier College, Ba</h4>
+                    <p>A Catholic secondary school dedicated to developing upright, creative, and compassionate leaders through holistic education in Fiji since 1953.</p>
+                    <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--apple-gold); font-weight:600;">
+                        "Do Your Best and Leave the Rest to God"
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About College</a></li>
+                        <li><a href="achievements.html">School Programmes</a></li>
+                        <li><a href="Resources.html">Online Resources</a></li>
+                        <li><a href="photos.html">Photo Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Departments</h5>
+                    <ul class="footer-links">
+                        <li><a href="DLanguage.html">Language Department</a></li>
+                        <li><a href="DMaths.html">Maths & Physics</a></li>
+                        <li><a href="DScience.html">Science Department</a></li>
+                        <li><a href="DSocial.html">Social Science & Geog</a></li>
+                        <li><a href="DComputer.html">Office Tech & Computer</a></li>
+                        <li><a href="DCommence.html">Commerce Department</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h5>Contact Information</h5>
+                    <p><strong>Address:</strong> Namosau, Ba, Fiji Islands</p>
+                    <p><strong>Phone:</strong> +679 667 0342</p>
+                    <p><strong>Email:</strong> <a href="mailto:xaviercollege198@gmail.com">xaviercollege198@gmail.com</a></p>
+                    <p style="margin-top:0.6rem;">
+                        <a href="http://www.education.gov.fj/" target="_blank" rel="noopener">Ministry of Education Fiji ↗</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Xavier College Fiji. All rights reserved. &nbsp;·&nbsp; Webdesigner: <a href="https://about.me/siddhanthmani" target="_blank" rel="noopener">Siddhanth Mani</a></p>
+                <p>Catholic Archdiocese of Suva &nbsp;·&nbsp; Western Division, Fiji</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const toggleBtn = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('primaryNav');
+        if (toggleBtn && navMenu) {
+            toggleBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

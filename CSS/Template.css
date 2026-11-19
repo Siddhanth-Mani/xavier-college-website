@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333333;
+    background-repeat: no-repeat;
+    font-family: "Arial Narrow", Arial;
+    background-color: #fdfdfd;
+}
+
+img:Hover {
+    box-shadow: 2px 2px 10px grey;
+}
+
+b {
+    font-weight: bold;
+    text-align: center;
+    color: #900;
+}
+
+#Wrap01 {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #feffff;
+    /* Old browsers */
+    background: linear-gradient(to bottom, #feffff 0%, #d2ebf9 100%);
+}
+
+#welcome {
+    /* [disabled]font-family: "Monotype Corsiva";
+*/
+    font-size: 24px;
+    position: absolute;
+    left: 223px;
+    top: 20px;
+    color: #283891;
+}
+
+#website {
+    /* [disabled]font-family: "Monotype Corsiva";
+*/
+    font-size: 24px;
+    position: absolute;
+    left: 822px;
+    top: 115px;
+    color: #283891;
+}
+
+#Wrap01Centre {
+    height: 150px;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 0px;
+}
+
+#Wrap02 {
+    position: relative;
+    width: 100%;
+    background-color: #1e37a4;
+    height: 70px;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7', GradientType=0);
+    background-color: #007dc1;
+}
+
+#Wrap02Centre {
+    height: 70px;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 0px;
+}
+
+#mainHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    color: #1E37A4;
+    position: absolute;
+    left: 224px;
+    top: 36px;
+    text-shadow: 7px 7px 5px rgba(0, 0, 142, 0.2);
+}
+
+#logo {
+    background-image: url(../Images/Logo93x120.png);
+    position: absolute;
+    height: 120px;
+    width: 93px;
+    left: 47px;
+    top: 14px;
+    /* [disabled]box-shadow: 2px 2px 10px grey;
+*/
+}
+
+#Wrap04 {
+    position: relative;
+    width: 100%;
+    background-color: #243137;
+    height: 100px;
+}
+
+#Wrap04Centre {
+    height: 100px;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 0px;
+}
+
+#WBLCopyright {
+    color: #CCC;
+    position: absolute;
+    top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    right: 350px;
+    text-align: right;
+    line-height: 20px;
+    width: 270px;
+}
+
+#WBLCopyright a {
+    color: #FFF;
+}
+
+#WBLCopyright a:hover {
+    color: #00CCFF;
+}
+
+#myBtn {
+    display: inline-block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border-top-width: 0;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 0;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FFF;
+    border-right-color: #FFF;
+    border-bottom-color: #FFF;
+    border-left-color: #FFF;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding: 3px;
+    background-color: #243137;
+}
+
+#myBtn:hover {
+    border-right-color: #FC0;
+    border-bottom-color: #FC0;
+    cursor: pointer;
+}
+
+p {
+    color: #007DC1;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Font10 {
+    line-height: 20px;
+    color: #666;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+.Font10New {
+    line-height: 20px;
+    color: #666;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+.Font10New a {
+    line-height: 20px;
+    color: #09F;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+.Font10New a:hover {
+    font-size: 18px;
+    color: #903;
+}
+
+.Font10Blue {
+    line-height: 30px;
+    color: #09C;
+    text-align: center;
+}
+
+.Font50 {
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    letter-spacing: 0.1em;
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 36px;
+}
+
+.Font30 {
+    line-height: 15px;
+    color: #666;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+
+.Font20 {
+    line-height: 20px;
+    color: #666;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.Font10Index {
+    line-height: 30px;
+    color: #666;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.SatShree {
+    line-height: 20px;
+    color: #09C;
+    text-align: center;
+    letter-spacing: 0.1em;
+    list-style-position: inside;
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.myTable {
+    line-height: 50px;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.myTable tr:hover {
+    background-color: #C8E6FB;
+    cursor: pointer;
+}
+
+#TitleBar {
+    height: 50px;
+    width: 700px;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 2px 2px 4px #0A122B;
+    border-radius: 15px 45px;
+    background: #38a0ef;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 3px 2px 10px 1px rgba(24, 106, 194, 0.59);
+    position: relative;
+    left: 130px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.phototable {
+    width: 170px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #295D82;
+    vertical-align: middle;
+    text-align: center;
+    border: thin solid #069;
+    border-radius: 15px 50px;
+    background-color: #FFF;
+}
+
+#MenuPosition {
+    position: absolute;
+    top: 15px;
+    left: 51px;
+    width: 870px;
+}
+
+#GradShadow {
+    height: 2px;
+    width: 100%;
+    background-color: #CCC;
+}
+
+#SmallLogo1 {
+    background-image: url(../Images/EyeLogo.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+
+#SmallLogo1:hover {
+    box-shadow: 2px 2px 30px 0px rgba(143, 198, 227, 1);
+}
+
+#SmallLogo2:hover {
+    box-shadow: 2px 2px 30px 0px rgba(143, 198, 227, 1);
+}
+
+#SmallLogo3:hover {
+    box-shadow: 2px 2px 30px 0px rgba(143, 198, 227, 1);
+}
+
+#SmallLogo4:hover {
+    box-shadow: 2px 2px 30px 0px rgba(143, 198, 227, 1);
+}
+
+#SmallLogo2 {
+    background-image: url(../Images/EyeLogo2.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+
+#SmallLogo3 {
+    background-image: url(../Images/EyeLogo3.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+
+#SmallLogo4 {
+    background-image: url(../Images/EyeLogo4.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}

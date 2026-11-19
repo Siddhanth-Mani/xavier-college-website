@@ -1,0 +1,1143 @@
+/*
+ * xavier.css — Shared stylesheet for Xavier College, Ba, Fiji
+ * Apple-inspired clean, editorial design
+ * Version: 2.0
+ *
+ * =============================================================================
+ * NAV HTML TEMPLATE (copy to every page):
+ * =============================================================================
+ *
+ * <nav class="xav-nav" id="xavNav">
+ *   <div class="xav-container xav-nav-inner">
+ *     <a href="index.html" class="xav-nav-brand">
+ *       <img src="logo.jpg" alt="Xavier College">
+ *       <span>Xavier College</span>
+ *     </a>
+ *     <ul class="xav-nav-links" id="xavLinks">
+ *       <li><a href="index.html">Home</a></li>
+ *       <li class="has-drop">
+ *         <a href="about.html">About</a>
+ *         <ul class="xav-drop"><li><a href="about.html">The College</a></li></ul>
+ *       </li>
+ *       <li class="has-drop">
+ *         <a href="#">Departments</a>
+ *         <ul class="xav-drop">
+ *           <li><a href="DLanguage.html">Language</a></li>
+ *           <li><a href="DMaths.html">Maths & Physics</a></li>
+ *           <li><a href="DScience.html">Science</a></li>
+ *           <li><a href="DSocial.html">Social Science</a></li>
+ *           <li><a href="DHome.html">Home Economics</a></li>
+ *           <li><a href="DComputer.html">Office Technologies</a></li>
+ *           <li><a href="DPemac.html">PEMAC</a></li>
+ *           <li><a href="DIndustrial.html">Industrial Arts</a></li>
+ *           <li><a href="DCommence.html">Commerce</a></li>
+ *           <li><a href="DAgriculture.html">Agriculture</a></li>
+ *         </ul>
+ *       </li>
+ *       <li><a href="achievements.html">School Programmes</a></li>
+ *       <li class="has-drop">
+ *         <a href="Resources.html">Resources</a>
+ *         <ul class="xav-drop"><li><a href="Resources.html">Useful Links</a></li></ul>
+ *       </li>
+ *       <li class="has-drop">
+ *         <a href="photos.html">Gallery</a>
+ *         <ul class="xav-drop"><li><a href="photos.html">Photos</a></li></ul>
+ *       </li>
+ *     </ul>
+ *     <button class="xav-hamburger" id="xavHamburger" aria-label="Menu">
+ *       <span></span><span></span><span></span>
+ *     </button>
+ *   </div>
+ * </nav>
+ *
+ * =============================================================================
+ * FOOTER HTML TEMPLATE (copy to every page):
+ * =============================================================================
+ *
+ * <footer class="xav-footer">
+ *   <div class="xav-container xav-footer-grid">
+ *     <div class="xav-footer-col xav-footer-brand">
+ *       <img src="logo.jpg" alt="Xavier College">
+ *       <h4>Xavier College, Ba</h4>
+ *       <p>A Catholic secondary school dedicated to forming young people of faith,
+ *          learning and service in the heart of western Fiji since 1953.</p>
+ *     </div>
+ *     <div class="xav-footer-col">
+ *       <h5>Navigation</h5>
+ *       <ul>
+ *         <li><a href="index.html">Home</a></li>
+ *         <li><a href="about.html">About</a></li>
+ *         <li><a href="achievements.html">School Programmes</a></li>
+ *         <li><a href="photos.html">Gallery</a></li>
+ *         <li><a href="Resources.html">Resources</a></li>
+ *       </ul>
+ *     </div>
+ *     <div class="xav-footer-col">
+ *       <h5>Departments</h5>
+ *       <ul>
+ *         <li><a href="DLanguage.html">Language</a></li>
+ *         <li><a href="DMaths.html">Maths & Physics</a></li>
+ *         <li><a href="DScience.html">Science</a></li>
+ *         <li><a href="DSocial.html">Social Science</a></li>
+ *         <li><a href="DComputer.html">Office Technologies</a></li>
+ *       </ul>
+ *     </div>
+ *     <div class="xav-footer-col">
+ *       <h5>Contact Us</h5>
+ *       <p>Namosau, Ba<br>Fiji Islands</p>
+ *       <p>+679 667 0342</p>
+ *       <p>xaviercollege198@gmail.com</p>
+ *       <p><a href="http://www.education.gov.fj/">Ministry of Education, Fiji</a></p>
+ *     </div>
+ *   </div>
+ *   <div class="xav-footer-bottom">
+ *     <div class="xav-container">
+ *       <p>© 2024 Xavier College Ba, Fiji. All rights reserved.
+ *          Webdesigner: <a href="https://about.me/siddhanthmani" target="_blank">Siddhanth Mani</a></p>
+ *     </div>
+ *   </div>
+ * </footer>
+ *
+ * =============================================================================
+ * NAV + FOOTER JS INJECTION (alternative: paste in every page's <script> tag):
+ * =============================================================================
+ *
+ * document.getElementById('site-nav').innerHTML = `...nav html...`;
+ * document.getElementById('site-footer').innerHTML = `...footer html...`;
+ *
+ */
+
+/* =============================================================================
+   1. CSS RESET & BASE
+   ============================================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f7;
+  color: #6e6e73;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0071e3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0077ed;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1d1d1f;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: #6e6e73;
+  line-height: 1.7;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d2d2d7;
+  margin: 0;
+}
+
+/* =============================================================================
+   2. LAYOUT — CONTAINER
+   ============================================================================= */
+
+.xav-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* =============================================================================
+   3. TYPOGRAPHY UTILITIES
+   ============================================================================= */
+
+.xav-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0071e3;
+  margin-bottom: 10px;
+}
+
+.xav-h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #1d1d1f;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.xav-h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.025em;
+}
+
+.xav-h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.xav-lead {
+  font-size: 1.1rem;
+  color: #6e6e73;
+  line-height: 1.65;
+}
+
+.xav-muted {
+  color: #86868b;
+  font-size: 0.9rem;
+}
+
+.xav-center {
+  text-align: center;
+}
+
+/* =============================================================================
+   4. BUTTONS
+   ============================================================================= */
+
+.xav-btn,
+.xav-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 24px;
+  border-radius: 980px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  border: 1.5px solid transparent;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.xav-btn {
+  background-color: #0071e3;
+  color: #ffffff;
+  border-color: #0071e3;
+}
+
+.xav-btn:hover {
+  background-color: #0077ed;
+  border-color: #0077ed;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.25);
+}
+
+.xav-btn-outline {
+  background-color: transparent;
+  color: #0071e3;
+  border-color: #0071e3;
+}
+
+.xav-btn-outline:hover {
+  background-color: #0071e3;
+  color: #ffffff;
+}
+
+/* =============================================================================
+   5. CARDS
+   ============================================================================= */
+
+.xav-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 28px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.xav-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+}
+
+.xav-card-bordered {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #d2d2d7;
+  padding: 28px;
+  transition: box-shadow 0.2s ease;
+}
+
+.xav-card-bordered:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =============================================================================
+   6. SECTION UTILITY
+   ============================================================================= */
+
+.xav-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.xav-section-sm {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.xav-section-white {
+  background: #ffffff;
+}
+
+.xav-section-grey {
+  background: #f5f5f7;
+}
+
+/* =============================================================================
+   7. GRID UTILITIES
+   ============================================================================= */
+
+.xav-grid-2,
+.xav-grid-3,
+.xav-grid-4 {
+  display: grid;
+  gap: 24px;
+}
+
+.xav-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.xav-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.xav-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* =============================================================================
+   8. NAVBAR
+   ============================================================================= */
+
+.xav-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.xav-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  gap: 32px;
+}
+
+/* Brand / Logo */
+.xav-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.xav-nav-brand img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.xav-nav-brand span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  white-space: nowrap;
+}
+
+/* Nav links */
+.xav-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.xav-nav-links > li {
+  position: relative;
+}
+
+.xav-nav-links > li > a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.xav-nav-links > li > a:hover {
+  color: #0071e3;
+  background-color: #f5f5f7;
+}
+
+.xav-nav-links > li.active > a {
+  color: #0071e3;
+}
+
+/* Dropdown */
+.xav-drop {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 190px;
+  background: #ffffff;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  z-index: 999;
+  list-style: none;
+}
+
+.xav-drop li a {
+  display: block;
+  padding: 9px 14px;
+  font-size: 0.875rem;
+  color: #1d1d1f;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.xav-drop li a:hover {
+  background-color: #f5f5f7;
+  color: #0071e3;
+}
+
+.has-drop:hover > .xav-drop {
+  display: block;
+}
+
+/* Hamburger */
+.xav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.xav-hamburger:hover {
+  background-color: #f5f5f7;
+}
+
+.xav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1d1d1f;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Mobile open state */
+.xav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.xav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.xav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =============================================================================
+   9. PAGE HERO BANNER (inner pages — not full-screen, 180px)
+   ============================================================================= */
+
+.xav-page-hero {
+  background: #f5f5f7;
+  border-bottom: 1px solid #d2d2d7;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.xav-page-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.xav-page-hero h1 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.02em;
+}
+
+.xav-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #86868b;
+}
+
+.xav-breadcrumb a {
+  color: #0071e3;
+}
+
+.xav-breadcrumb span {
+  color: #86868b;
+}
+
+/* =============================================================================
+   10. FOOTER
+   ============================================================================= */
+
+.xav-footer {
+  background: #ffffff;
+  border-top: 1px solid #d2d2d7;
+  margin-top: auto;
+}
+
+.xav-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
+  padding-top: 56px;
+  padding-bottom: 48px;
+}
+
+.xav-footer-col h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.xav-footer-col h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.xav-footer-col p {
+  font-size: 0.875rem;
+  color: #6e6e73;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.xav-footer-col a {
+  color: #6e6e73;
+  font-size: 0.875rem;
+}
+
+.xav-footer-col a:hover {
+  color: #0071e3;
+}
+
+.xav-footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.xav-footer-col ul li a {
+  color: #6e6e73;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.xav-footer-col ul li a:hover {
+  color: #0071e3;
+}
+
+/* Footer brand column */
+.xav-footer-brand img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+/* Footer bottom bar */
+.xav-footer-bottom {
+  border-top: 1px solid #d2d2d7;
+  padding: 20px 0;
+  background: #1d1d1f;
+}
+
+.xav-footer-bottom p {
+  font-size: 0.8rem;
+  color: #86868b;
+  text-align: center;
+}
+
+.xav-footer-bottom a {
+  color: #86868b;
+}
+
+.xav-footer-bottom a:hover {
+  color: #ffffff;
+}
+
+/* =============================================================================
+   11. HOMEPAGE — HERO SECTION
+   ============================================================================= */
+
+.xav-home-hero {
+  background: #ffffff;
+  padding: 80px 0 60px;
+}
+
+.xav-home-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.xav-home-hero-text h1 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 700;
+  color: #1d1d1f;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.xav-home-hero-text .xav-motto {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #6e6e73;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.xav-home-hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.xav-home-hero-logo {
+  flex-shrink: 0;
+}
+
+.xav-home-hero-logo img {
+  width: 220px;
+  height: 220px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+}
+
+.xav-home-hero-divider {
+  margin-top: 60px;
+}
+
+/* =============================================================================
+   12. HOMEPAGE — STATS ROW
+   ============================================================================= */
+
+.xav-stats-row {
+  background: #f5f5f7;
+  padding: 48px 0;
+}
+
+.xav-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.xav-stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.xav-stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d1d1f;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.xav-stat-label {
+  font-size: 0.875rem;
+  color: #6e6e73;
+  font-weight: 400;
+}
+
+/* =============================================================================
+   13. HOMEPAGE — WELCOME SECTION
+   ============================================================================= */
+
+.xav-welcome {
+  background: #ffffff;
+  padding: 72px 0;
+}
+
+.xav-welcome-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.xav-welcome-text h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+  letter-spacing: -0.025em;
+}
+
+.xav-welcome-text p {
+  color: #6e6e73;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  font-size: 0.975rem;
+}
+
+.xav-welcome-img img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* =============================================================================
+   14. HOMEPAGE — VISION / MISSION / THEME CARDS
+   ============================================================================= */
+
+.xav-vmt-section {
+  background: #f5f5f7;
+  padding: 72px 0;
+}
+
+.xav-vmt-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.xav-vmt-heading h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.xav-vmt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.xav-vmt-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #d2d2d7;
+  padding: 32px 28px;
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+
+.xav-vmt-card::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #0071e3;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.xav-vmt-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0071e3;
+  margin-bottom: 14px;
+  letter-spacing: 0;
+}
+
+.xav-vmt-card p {
+  color: #6e6e73;
+  font-size: 0.925rem;
+  line-height: 1.72;
+}
+
+.xav-vmt-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+}
+
+/* =============================================================================
+   15. HOMEPAGE — DEPARTMENTS GRID
+   ============================================================================= */
+
+.xav-depts-section {
+  background: #ffffff;
+  padding: 72px 0;
+}
+
+.xav-depts-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.xav-depts-heading h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.xav-depts-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.xav-dept-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #d2d2d7;
+  border-radius: 10px;
+  padding: 18px 20px;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  color: #1d1d1f;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.xav-dept-card .xav-dept-arrow {
+  color: #86868b;
+  font-size: 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.xav-dept-card:hover {
+  color: #0071e3;
+  border-color: #0071e3;
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.1);
+}
+
+.xav-dept-card:hover .xav-dept-arrow {
+  color: #0071e3;
+  transform: translateX(2px);
+}
+
+/* =============================================================================
+   16. HOMEPAGE — PHOTO STRIP
+   ============================================================================= */
+
+.xav-photos-section {
+  background: #f5f5f7;
+  padding: 72px 0;
+}
+
+.xav-photos-heading {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.xav-photos-heading h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.xav-photo-strip {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #d2d2d7 transparent;
+}
+
+.xav-photo-strip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.xav-photo-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.xav-photo-strip::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 3px;
+}
+
+.xav-photo-strip img {
+  flex-shrink: 0;
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* =============================================================================
+   17. SECTION HEADINGS — REUSABLE PATTERN
+   ============================================================================= */
+
+.xav-section-header {
+  margin-bottom: 48px;
+}
+
+.xav-section-header.center {
+  text-align: center;
+}
+
+.xav-section-header h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #1d1d1f;
+  margin-bottom: 10px;
+  letter-spacing: -0.025em;
+}
+
+.xav-section-header p {
+  color: #6e6e73;
+  max-width: 600px;
+}
+
+.xav-section-header.center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =============================================================================
+   18. RESPONSIVE BREAKPOINTS
+   ============================================================================= */
+
+/* Large tablets / small desktops */
+@media (max-width: 1024px) {
+  .xav-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xav-depts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .xav-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .xav-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .xav-nav-links {
+    display: none;
+    position: absolute;
+    top: 61px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #d2d2d7;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px 20px;
+    gap: 2px;
+    z-index: 999;
+  }
+
+  .xav-nav-links.open {
+    display: flex;
+  }
+
+  .xav-nav-links > li {
+    width: 100%;
+  }
+
+  .xav-nav-links > li > a {
+    padding: 10px 12px;
+    width: 100%;
+  }
+
+  .xav-drop {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: #f5f5f7;
+    padding: 4px 0 4px 12px;
+    display: none;
+  }
+
+  .has-drop:hover > .xav-drop {
+    display: none;
+  }
+
+  .has-drop.open > .xav-drop {
+    display: block;
+  }
+
+  .xav-hamburger {
+    display: flex;
+  }
+
+  .xav-home-hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .xav-home-hero-logo {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .xav-home-hero-logo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .xav-home-hero-actions {
+    justify-content: center;
+  }
+
+  .xav-welcome-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .xav-vmt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xav-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .xav-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .xav-depts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xav-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .xav-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .xav-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .xav-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xav-depts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xav-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .xav-photo-strip img {
+    width: 220px;
+    height: 160px;
+  }
+
+  .xav-vmt-card {
+    padding: 24px 20px;
+  }
+
+  .xav-home-hero {
+    padding: 48px 0 40px;
+  }
+
+  .xav-home-hero-logo img {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery · Xavier College Ba, Fiji</title>
+    <link rel="shortcut icon" href="Images/favicon1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/apple-theme.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            margin-top: 1.25rem;
+        }
+        .gallery-item {
+            background: #ffffff;
+            border: 1px solid var(--apple-card-border);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        .gallery-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(26, 86, 219, 0.15);
+            border-color: var(--xav-blue);
+        }
+        .gallery-item a {
+            display: block;
+            position: relative;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+        .gallery-item-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(11, 37, 69, 0.85);
+            color: #ffffff;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 0.25rem 0.55rem;
+            border-radius: 6px;
+            backdrop-filter: blur(4px);
+        }
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-link">
+                <img src="logo.jpg" alt="Xavier College Crest" class="brand-logo" onerror="this.src='Images/favicon1.jpg'">
+                <div class="brand-text">
+                    <span class="brand-name">Xavier College</span>
+                    <span class="brand-location">Ba, Fiji · Est. 1953</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="primary-nav" id="primaryNav">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="about.html" class="dropdown-link">The College & History</a></li>
+                            <li><a href="about.html#location" class="dropdown-link">Location & Map</a></li>
+                            <li><a href="about.html#contact" class="dropdown-link">Contact Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="DScience.html" class="nav-link">Departments <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown wide">
+                            <li><a href="DLanguage.html" class="dropdown-link ">Language</a></li>
+                            <li><a href="DMaths.html" class="dropdown-link ">Maths & Physics</a></li>
+                            <li><a href="DScience.html" class="dropdown-link ">Science</a></li>
+                            <li><a href="DSocial.html" class="dropdown-link ">Social Science</a></li>
+                            <li><a href="DHome.html" class="dropdown-link ">Home Economics</a></li>
+                            <li><a href="DComputer.html" class="dropdown-link ">Office Tech & Comp</a></li>
+                            <li><a href="DPemac.html" class="dropdown-link ">PEMAC</a></li>
+                            <li><a href="DIndustrial.html" class="dropdown-link ">Industrial Arts</a></li>
+                            <li><a href="DCommence.html" class="dropdown-link ">Commerce</a></li>
+                            <li><a href="DAgriculture.html" class="dropdown-link ">Agriculture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="achievements.html" class="nav-link">School Programmes</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="Resources.html" class="nav-link">Resources <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="Resources.html" class="dropdown-link">Ministry Portals</a></li>
+                            <li><a href="Resources.html#learning" class="dropdown-link">Online Learning Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="photos.html" class="nav-link">Gallery <span class="chevron">▾</span></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="photos.html#campus" class="dropdown-link">Campus</a></li>
+                            <li><a href="photos.html#memories" class="dropdown-link">Memories</a></li>
+                            <li><a href="photos.html#sports" class="dropdown-link">Inter-House</a></li>
+                            <li><a href="photos.html#awards" class="dropdown-link">Awards</a></li>
+                            <li><a href="photos.html#cadets" class="dropdown-link">Cadets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Gallery</span>
+            </nav>
+            <h1 class="page-title">Xavier College Photo Gallery</h1>
+            <p class="page-subtitle">A visual archive celebrating campus heritage, athletics, cadet parades, and commemorative moments.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+
+        <!-- Category 1: Xavier Campus -->
+        <article class="apple-card" id="campus">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow">Campus Grounds</span>
+                    <h2 class="card-title">Xavier Campus</h2>
+                </div>
+                <span style="font-size:0.84rem; color:var(--xav-blue); font-weight:700;">🔍 Click any photo to enlarge</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><a href="dist/Gallery3/k01.jpg" data-lightbox="campus" data-title="Xavier College Main Campus Grounds"><img src="dist/Gallery3/k01.jpg" alt="Xavier Campus"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k02.jpg" data-lightbox="campus" data-title="Academic Blocks and Walkways"><img src="dist/Gallery3/k02.jpg" alt="Academic Buildings"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k04.jpg" data-lightbox="campus" data-title="Campus Grounds &amp; Facilities"><img src="dist/Gallery3/k04.jpg" alt="Campus Facility"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k05.jpg" data-lightbox="campus" data-title="Central Courtyard &amp; Assembly"><img src="dist/Gallery3/k05.jpg" alt="School Courtyard"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k06.jpg" data-lightbox="campus" data-title="Classroom Corridors and Architecture"><img src="dist/Gallery3/k06.jpg" alt="College Architecture"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k07.jpg" data-lightbox="campus" data-title="Secondary Block &amp; Gardens"><img src="dist/Gallery3/k07.jpg" alt="Classroom Blocks"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+            </div>
+        </article>
+
+        <!-- Category 2: Xaverian Memories -->
+        <article class="apple-card" id="memories">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow gold">Historical Collection</span>
+                    <h2 class="card-title">Xaverian Memories</h2>
+                </div>
+                <span style="font-size:0.84rem; color:var(--xav-gold-dark); font-weight:700;">🔍 Click any photo to enlarge</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><a href="dist/Gallery3/S04.jpg" data-lightbox="memories" data-title="Student Class Assembly"><img src="dist/Gallery3/S04.jpg" alt="Memories 1"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/S10.jpg" data-lightbox="memories" data-title="Auditorium Celebrations"><img src="dist/Gallery3/S10.jpg" alt="Memories 2"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k16.JPG" data-lightbox="memories" data-title="School Community Gatherings"><img src="dist/Gallery3/k16.JPG" alt="Memories 3"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k08.JPG" data-lightbox="memories" data-title="Classroom Academic Session"><img src="dist/Gallery3/k08.JPG" alt="Memories 4"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k09.JPG" data-lightbox="memories" data-title="Educational Presentations"><img src="dist/Gallery3/k09.JPG" alt="Memories 5"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k10.JPG" data-lightbox="memories" data-title="Fellowship &amp; Study"><img src="dist/Gallery3/k10.JPG" alt="Memories 6"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k11.JPG" data-lightbox="memories" data-title="College Traditions"><img src="dist/Gallery3/k11.JPG" alt="Memories 7"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k12.JPG" data-lightbox="memories" data-title="Cultural Exchange &amp; Friendship"><img src="dist/Gallery3/k12.JPG" alt="Memories 8"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k13.JPG" data-lightbox="memories" data-title="Xavier Spirit"><img src="dist/Gallery3/k13.JPG" alt="Memories 9"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+            </div>
+        </article>
+
+        <!-- Category 3: Inter-House Athletics -->
+        <article class="apple-card" id="sports">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow" style="color:var(--xav-green); background:var(--xav-green-light);">Sports Excellence</span>
+                    <h2 class="card-title">Inter-House Athletics 2022</h2>
+                </div>
+                <span style="font-size:0.84rem; color:var(--xav-green); font-weight:700;">🔍 Click any photo to enlarge</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><a href="dist/Gallery3/k18.JPG" data-lightbox="sports" data-title="Track &amp; Field Sprints"><img src="dist/Gallery3/k18.JPG" alt="Athletics 1"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k19.JPG" data-lightbox="sports" data-title="House Athletic Competitions"><img src="dist/Gallery3/k19.JPG" alt="Athletics 2"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k20.JPG" data-lightbox="sports" data-title="100m &amp; 200m Track Dash"><img src="dist/Gallery3/k20.JPG" alt="Athletics 3"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k21.JPG" data-lightbox="sports" data-title="Long Jump &amp; Field Events"><img src="dist/Gallery3/k21.JPG" alt="Athletics 4"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k22.JPG" data-lightbox="sports" data-title="Inter-House Relay Finals"><img src="dist/Gallery3/k22.JPG" alt="Athletics 5"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k23.JPG" data-lightbox="sports" data-title="House Cheerleaders &amp; Supporters"><img src="dist/Gallery3/k23.JPG" alt="Athletics 6"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+            </div>
+        </article>
+
+        <!-- Category 4: Award Ceremony -->
+        <article class="apple-card" id="awards">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow" style="color:var(--xav-purple); background:var(--xav-purple-light);">Academic Honours</span>
+                    <h2 class="card-title">Annual Award Ceremony</h2>
+                </div>
+                <span style="font-size:0.84rem; color:var(--xav-purple); font-weight:700;">🔍 Click any photo to enlarge</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><a href="dist/Gallery3/k36.JPG" data-lightbox="awards" data-title="Academic Prize Giving"><img src="dist/Gallery3/k36.JPG" alt="Award 1"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k37.JPG" data-lightbox="awards" data-title="Honouring Subject Champions"><img src="dist/Gallery3/k37.JPG" alt="Award 2"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k38.JPG" data-lightbox="awards" data-title="Recognition of Student Leadership"><img src="dist/Gallery3/k38.JPG" alt="Award 3"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k39.JPG" data-lightbox="awards" data-title="Presentation of Certificates"><img src="dist/Gallery3/k39.JPG" alt="Award 4"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k40.JPG" data-lightbox="awards" data-title="College Faculty &amp; Guests"><img src="dist/Gallery3/k40.JPG" alt="Award 5"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k41.JPG" data-lightbox="awards" data-title="Dux and High Achiever Awards"><img src="dist/Gallery3/k41.JPG" alt="Award 6"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+            </div>
+        </article>
+
+        <!-- Category 5: Cadets Pass Out -->
+        <article class="apple-card" id="cadets">
+            <div class="card-header">
+                <div>
+                    <span class="card-eyebrow">Discipline &amp; Leadership</span>
+                    <h2 class="card-title">Cadets Pass Out Parade</h2>
+                </div>
+                <span style="font-size:0.84rem; color:var(--xav-blue); font-weight:700;">🔍 Click any photo to enlarge</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><a href="dist/Gallery3/k48.jpg" data-lightbox="cadets" data-title="RFMF Officer Inspection"><img src="dist/Gallery3/k48.jpg" alt="Cadets 1"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k49.jpg" data-lightbox="cadets" data-title="Military Drill Contingents"><img src="dist/Gallery3/k49.jpg" alt="Cadets 2"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k50.jpg" data-lightbox="cadets" data-title="Pass Out Parade Formations"><img src="dist/Gallery3/k50.jpg" alt="Cadets 3"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k51.jpg" data-lightbox="cadets" data-title="March Past in Review"><img src="dist/Gallery3/k51.jpg" alt="Cadets 4"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k52.jpg" data-lightbox="cadets" data-title="Salute to Inspecting Commander"><img src="dist/Gallery3/k52.jpg" alt="Cadets 5"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+                <div class="gallery-item"><a href="dist/Gallery3/k53.jpg" data-lightbox="cadets" data-title="Cadet Trophy Presentation"><img src="dist/Gallery3/k53.jpg" alt="Cadets 6"><span class="gallery-item-badge">Enlarge ↗</span></a></div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Xavier College, Ba</h4>
+                    <p>A Catholic secondary school dedicated to developing upright, creative, and compassionate leaders through holistic education in Fiji since 1953.</p>
+                    <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--apple-gold); font-weight:600;">
+                        "Do Your Best and Leave the Rest to God"
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About College</a></li>
+                        <li><a href="achievements.html">School Programmes</a></li>
+                        <li><a href="Resources.html">Online Resources</a></li>
+                        <li><a href="photos.html">Photo Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Departments</h5>
+                    <ul class="footer-links">
+                        <li><a href="DLanguage.html">Language Department</a></li>
+                        <li><a href="DMaths.html">Maths & Physics</a></li>
+                        <li><a href="DScience.html">Science Department</a></li>
+                        <li><a href="DSocial.html">Social Science & Geog</a></li>
+                        <li><a href="DComputer.html">Office Tech & Computer</a></li>
+                        <li><a href="DCommence.html">Commerce Department</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h5>Contact Information</h5>
+                    <p><strong>Address:</strong> Namosau, Ba, Fiji Islands</p>
+                    <p><strong>Phone:</strong> +679 667 0342</p>
+                    <p><strong>Email:</strong> <a href="mailto:xaviercollege198@gmail.com">xaviercollege198@gmail.com</a></p>
+                    <p style="margin-top:0.6rem;">
+                        <a href="http://www.education.gov.fj/" target="_blank" rel="noopener">Ministry of Education Fiji ↗</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Xavier College Fiji. All rights reserved. &nbsp;·&nbsp; Webdesigner: <a href="https://about.me/siddhanthmani" target="_blank" rel="noopener">Siddhanth Mani</a></p>
+                <p>Catholic Archdiocese of Suva &nbsp;·&nbsp; Western Division, Fiji</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const toggleBtn = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('primaryNav');
+        if (toggleBtn && navMenu) {
+            toggleBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+            });
+        }
+    </script>
+
+    <!-- Apple Lightbox Interactive Modal Script -->
+    <script src="js/apple-lightbox.js"></script>
+</body>
+</html>
