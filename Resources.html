@@ -1,305 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student & Teacher Resources · Xavier College Ba, Fiji</title>
-    <link rel="shortcut icon" href="Images/favicon1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/apple-theme.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="CSS/Template.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/menuCss.css" />
+    <link rel="shortcut icon" href="Images/favicon1.jpg" type="favicon1/x-icon" />
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Xavier College</title>
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
+
     <style>
-        .resource-card {
-            background: #ffffff;
-            border: 1px solid var(--apple-card-border);
-            border-radius: 14px;
-            padding: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-decoration: none;
-            color: inherit;
-            box-shadow: var(--apple-card-shadow);
-            transition: all 0.2s ease;
+        #Wrap03 {
+            position: relative;
+            width: 100%;
+            background-image: url(Images/BlueTexture2.jpg);
+            background-repeat: repeat;
         }
-        .resource-card:hover {
-            border-color: var(--apple-blue);
-            box-shadow: 0 6px 18px rgba(0, 113, 227, 0.08);
-            transform: translateY(-2px);
-            text-decoration: none;
-        }
-        .resource-card h4 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--apple-text-primary);
-            margin-bottom: 0.25rem;
-        }
-        .resource-card p {
-            font-size: 0.82rem;
-            color: var(--apple-text-secondary);
-        }
-        .resource-btn-indicator {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: var(--apple-blue-subtle);
-            color: var(--apple-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            margin-left: 1rem;
+
+        #Wrap03Centre {
+            height: 1325px;
+            width: 980px;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            top: 0px;
         }
     </style>
-</head>
-<body>
-
-    <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="brand-link">
-                <img src="logo.jpg" alt="Xavier College Crest" class="brand-logo" onerror="this.src='Images/favicon1.jpg'">
-                <div class="brand-text">
-                    <span class="brand-name">Xavier College</span>
-                    <span class="brand-location">Ba, Fiji · Est. 1953</span>
-                </div>
-            </a>
-
-            <nav>
-                <ul class="primary-nav" id="primaryNav">
-                    <li class="nav-item ">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown">
-                            <li><a href="about.html" class="dropdown-link">The College & History</a></li>
-                            <li><a href="about.html#location" class="dropdown-link">Location & Map</a></li>
-                            <li><a href="about.html#contact" class="dropdown-link">Contact Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="DScience.html" class="nav-link">Departments <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown wide">
-                            <li><a href="DLanguage.html" class="dropdown-link ">Language</a></li>
-                            <li><a href="DMaths.html" class="dropdown-link ">Maths & Physics</a></li>
-                            <li><a href="DScience.html" class="dropdown-link ">Science</a></li>
-                            <li><a href="DSocial.html" class="dropdown-link ">Social Science</a></li>
-                            <li><a href="DHome.html" class="dropdown-link ">Home Economics</a></li>
-                            <li><a href="DComputer.html" class="dropdown-link ">Office Tech & Comp</a></li>
-                            <li><a href="DPemac.html" class="dropdown-link ">PEMAC</a></li>
-                            <li><a href="DIndustrial.html" class="dropdown-link ">Industrial Arts</a></li>
-                            <li><a href="DCommence.html" class="dropdown-link ">Commerce</a></li>
-                            <li><a href="DAgriculture.html" class="dropdown-link ">Agriculture</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="achievements.html" class="nav-link">School Programmes</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="Resources.html" class="nav-link">Resources <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown">
-                            <li><a href="Resources.html" class="dropdown-link">Ministry Portals</a></li>
-                            <li><a href="Resources.html#learning" class="dropdown-link">Online Learning Tools</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="photos.html" class="nav-link">Gallery <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown">
-                            <li><a href="photos.html#campus" class="dropdown-link">Campus</a></li>
-                            <li><a href="photos.html#memories" class="dropdown-link">Memories</a></li>
-                            <li><a href="photos.html#sports" class="dropdown-link">Inter-House</a></li>
-                            <li><a href="photos.html#awards" class="dropdown-link">Awards</a></li>
-                            <li><a href="photos.html#cadets" class="dropdown-link">Cadets</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <section class="page-hero">
-        <div class="page-hero-inner">
-            <nav class="breadcrumb">
-                <a href="index.html">Home</a> <span>/</span> <span>Resources</span>
-            </nav>
-            <h1 class="page-title">Educational Resources & Portals</h1>
-            <p class="page-subtitle">Access official Ministry of Education syllabi, past examination papers, digital textbooks, and leading e-learning platforms.</p>
-        </div>
-    </section>
-
-    <main class="main-content">
-
-        <!-- Online Learning Overview -->
-        <article class="apple-card">
-            <div class="card-header">
-                <div>
-                    <span class="card-eyebrow">Digital Pedagogy</span>
-                    <h2 class="card-title">Digital Learning at Xavier College</h2>
-                </div>
-            </div>
-            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1rem;">
-                The effective use of digital learning tools in classrooms enhances student engagement, supports teachers in personalizing lesson plans, and equips young learners with critical 21st-century digital competencies.
-            </p>
-            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75;">
-                Web-based learning provides structured online course content, supplementary revision materials, and academic research access. Xavier College encourages all students to utilize these vetted national and international learning portals.
-            </p>
-        </article>
-
-        <!-- Official Ministry Portals Section -->
-        <article class="apple-card">
-            <div class="card-header">
-                <div>
-                    <span class="card-eyebrow">National Education System</span>
-                    <h2 class="card-title">Ministry of Education Fiji (MEHA) Official Portals</h2>
-                </div>
-                <span style="font-size:0.8rem; color:var(--apple-blue); font-weight:600;">Government of Fiji</span>
-            </div>
-
-            <div class="grid-2">
-                <a href="http://www.education.gov.fj/" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>Ministry of Education Fiji (MEHA)</h4>
-                        <p>Official website for national curricula, term dates, and educational circulars.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-
-                <a href="http://www.education.gov.fj/exam-papers" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>National Examination Papers</h4>
-                        <p>Past national exam papers for Year 12 and Year 13 external assessment revision.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-
-                <a href="http://www.education.gov.fj/textbooks/" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>Official Digital Textbooks</h4>
-                        <p>Prescribed Ministry of Education secondary textbooks and subject guides in PDF.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-
-                <a href="http://www.education.gov.fj/2021-supplementary-resources/" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>Supplementary Learning Resources</h4>
-                        <p>Curriculum enrichment materials, worksheets, and instructional support modules.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-            </div>
-        </article>
-
-        <!-- Online Learning & Skills Portals -->
-        <article class="apple-card" id="learning">
-            <div class="card-header">
-                <div>
-                    <span class="card-eyebrow">Academic Enrichment</span>
-                    <h2 class="card-title">Recommended E-Learning Platforms</h2>
-                </div>
-                <span style="font-size:0.8rem; color:var(--apple-text-tertiary);">Self-Paced Learning</span>
-            </div>
-
-            <div class="grid-2">
-                <a href="https://www.khanacademy.org/" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>Khan Academy</h4>
-                        <p>Free, world-class lessons in Mathematics, Physics, Chemistry, and Biology.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-
-                <a href="https://www.w3schools.com" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>W3Schools Online Web Tutorials</h4>
-                        <p>Self-paced tutorials in HTML, CSS, JavaScript, and computer programming.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-
-                <a href="https://www.coursera.org/" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>Coursera Academic Courses</h4>
-                        <p>Global university-level foundation courses for advanced secondary students.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-
-                <a href="https://www.grammarly.com" class="resource-card" target="_blank" rel="noopener">
-                    <div>
-                        <h4>Grammarly Literacy Support</h4>
-                        <p>Writing assistant to enhance English grammar, composition, and essay drafting.</p>
-                    </div>
-                    <div class="resource-btn-indicator">↗</div>
-                </a>
-            </div>
-        </article>
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h4>Xavier College, Ba</h4>
-                    <p>A Catholic secondary school dedicated to developing upright, creative, and compassionate leaders through holistic education in Fiji since 1953.</p>
-                    <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--apple-gold); font-weight:600;">
-                        "Do Your Best and Leave the Rest to God"
-                    </p>
-                </div>
-                <div class="footer-col">
-                    <h5>Quick Navigation</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About College</a></li>
-                        <li><a href="achievements.html">School Programmes</a></li>
-                        <li><a href="Resources.html">Online Resources</a></li>
-                        <li><a href="photos.html">Photo Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Departments</h5>
-                    <ul class="footer-links">
-                        <li><a href="DLanguage.html">Language Department</a></li>
-                        <li><a href="DMaths.html">Maths & Physics</a></li>
-                        <li><a href="DScience.html">Science Department</a></li>
-                        <li><a href="DSocial.html">Social Science & Geog</a></li>
-                        <li><a href="DComputer.html">Office Tech & Computer</a></li>
-                        <li><a href="DCommence.html">Commerce Department</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-contact">
-                    <h5>Contact Information</h5>
-                    <p><strong>Address:</strong> Namosau, Ba, Fiji Islands</p>
-                    <p><strong>Phone:</strong> +679 667 0342</p>
-                    <p><strong>Email:</strong> <a href="mailto:xaviercollege198@gmail.com">xaviercollege198@gmail.com</a></p>
-                    <p style="margin-top:0.6rem;">
-                        <a href="http://www.education.gov.fj/" target="_blank" rel="noopener">Ministry of Education Fiji ↗</a>
-                    </p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 Xavier College Fiji. All rights reserved. &nbsp;·&nbsp; Webdesigner: <a href="https://about.me/siddhanthmani" target="_blank" rel="noopener">Siddhanth Mani</a></p>
-                <p>Catholic Archdiocese of Suva &nbsp;·&nbsp; Western Division, Fiji</p>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Mobile navigation toggle
-        const toggleBtn = document.getElementById('mobileToggle');
-        const navMenu = document.getElementById('primaryNav');
-        if (toggleBtn && navMenu) {
-            toggleBtn.addEventListener('click', () => {
-                navMenu.classList.toggle('open');
-            });
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
+
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" type="text/css" href="CSS/fixes.css" />
+
+
+<body>
+<div class="student-note">Student project by <a href="https://siddhanth.ryzn.pro/">Siddhanth Mani</a> (high school, 2022). This is not the official Xavier College website.</div>
+    <div id="Wrap01">
+        <div id="Wrap01Centre">
+           
+            <img src="logo.jpg" alt="school logo" width="150" height="150"> 
+            <div id="mainHeading">XAVIER COLLEGE</div>
+          
+        </div>
+    </div>
+    <div id="Wrap02">
+        <div id="Wrap02Centre">
+            <div id="MenuPosition">
+                <ul id="menu">
+  <li><a href="index.html">HOME</a></li>
+                  
+                    <li><a href="">ABOUT</a>
+                        <ul>
+                            <li><a href="about.html">College</a></li>
+                           
+                            
+                            
+                        </ul>
+                    </li>
+                    <li><a href="">Departments</a>
+                        <ul>
+                          
+                          
+                            <li><a href="">Departments</a>
+                                <ul>
+                                    <li><a href="DLanguage.html">Language</a></li>
+                                    <li><a href="DMaths.html">Maths/Physics</a></li>
+                                    <li><a href="DScience.html">Science</a></li>
+                                    <li><a href="DSocial.html">Social Science</a></li>
+                                    <li><a href="DHome.html">Home Economics</a></li>
+                                    <li><a href="DComputer.html">Office Technologies</a></li>
+                                    <li><a href="DPemac.html">PEMAC</a></li>
+                                    <li><a href="DIndustrial.html">Industrial Arts</a></li>
+                                    <li><a href="DCommence.html">Commerce</a></li>                                 
+                                    <li><a href="DAgriculture.html">Argriculture</a></li>
+
+                                </ul>
+                            </li>
+                            
+                                <ul>
+                                   
+                                   
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </li>
+					
+                    <li><a href="achievements.html">SCHOOL PROGRAMMES</a></li>
+					 
+					 
+					 
+					 <li><a href="Resources.html">RESOURCES</a>
+                        <ul>
+                            <li><a href="Resources.html">useful links</a></li>
+                           
+                            
+                            
+                        </ul>
+                    </li>
+					
+					
+					
+                    <li><a href="">GALLERY</a>
+                        <ul>
+                            
+                            <li><a href="photos.html">Photos</a></li>
+                        </ul>
+                    </li>
+                   
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- InstanceBeginEditable name="EditRegionSilder" -->
+
+
+    <!-- InstanceEndEditable -->
+
+
+
+
+    <div id="Wrap03">
+        <div id="Wrap03Centre">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td></td>
+                    <td width="100%" valign="top">
+                        <!-- InstanceBeginEditable name="EditRegion3" -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <td colspan="3">
+                                <div id="TitleBar"> RESOURCES</div>
+                            </td>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font20">
+                                    <p>ONLINE RESOURCES</p>
+                                   The effective use of digital learning tools in classrooms can increase student engagement, 
+								help teachers improve their lesson plans, and facilitate personalized learning. It also helps students build essential 21st-century skills <br />
+								
+								<br>
+								<br>
+                                    <br /> Web based learning is often called online learning or e-learning because it includes online course content. Discussion forums via email, videoconferencing, and live lectures (videostreaming) are all possible through the web.
+                           								Web based courses may also provide static pages such as printed course materials. <br />
+                                                               <br>
+															   <br>
+
+														<br/>Web resources are an invaluable base to create the information and subject environment, education and self- education for students, meet their personal and professional interests and needs. However,
+														the mere access to Web resources does not guarantee fast and high-quality language education. <br/>
+														
+														<br>
+														<br>
+
+		                 
+                                   
+                                </td>
+                            </tr>
+							
+							
+	
+							
+							
+							
+							
+							
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                           
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> 
+							
+							
+							  <tr>
+							</br>
+	</br>
+	</br>
+                                <td colspan="3" align="center"><img src="Images/StaffsImages/2019/04.jpg" width="120" height="135" /></td>
+								
+                            </tr>
+							
+                            <tr>
+                                <td colspan="3" class="Font10">
+								<br>
+
+
+								
+                                <h2>  <p>LINKS</p>   </h2>
+								  
+								  
+								  <br/>
+									<center>
+									
+									
+									<br/>
+									
+
+<br>
+<br>
+
+
+<a href="http://www.education.gov.fj/" class="button" target="_blank">MINISTRY OF EDUCATION</a>
+<a href="http://www.education.gov.fj/2021-supplementary-resources/" class="button" target="_blank">SUPPLEMENTARY RESOURCES</a>
+<a href="http://www.education.gov.fj/exam-papers" class="button" target="_blank">EXAM PAPERS</a>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<a href="http://www.education.gov.fj/textbooks/" class="button" target="_blank">TEXTBOOKS</a>
+
+<a href="https://www.w3schools.com" class="button" target="_blank">W3SCHOOLS</a>
+
+<a href="https://www.similarweb.com/website/grammarly.com" class="button" target="_blank">GRAMMARLY</a>
+<a href="https://www.coursera.org/" class="button" target="_blank">COURSERA</a>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.skillshare.com/" class="button" target="_blank">SKILLSHARE</a>
+<a href="https://www.similarweb.com/website/udemy.com" class="button" target="_blank">UDEMY</a>
+<a href="https://www.khanacademy.org/" class="button" target="_blank">KHAN ACADEMY</a>
+
+ 
+
+ 
+
+  <style>
+     .button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+	   </style>
+
+
+
+</center>
+								
+                                   </tr>	   
+							   
+								   
+								   
+								   
+								   
+								   
+								   
+								   
+								   
+								   
+                         
+                            <tr>
+							
+							
+                                <td colspan="3">
+								<br>
+							<br>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font20">
+								
+								
+								
+								
+								 <tr>
+                        <td colspan="3" class="Font10Index">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="Font10Index">
+                            <table width="100%" border="0" cellspacing="3" cellpadding="20">
+                                <tr>
+                                    <td width="200" align="center">&nbsp;</td>
+                                    <td width="200" align="center">&nbsp;</td>
+                                    <td width="200" align="center">&nbsp;</td>
+                                    <td width="200" align="center">&nbsp;</td>
+                                </tr>
+								
+                                <tr>
+                                    <td align="center">&nbsp;</td>
+                                    <td align="center">&nbsp;</td>
+                                    <td align="center">&nbsp;</td>
+                                    <td align="center">&nbsp;</td>
+                                </tr>
+                               
+                               
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        </table>
+                        <!-- InstanceEndEditable -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+								
+								
+								
+								
+								
+								
+                           
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- InstanceEndEditable -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+	    <br> 
+	
+	
+	
+	
+	
+	
+	
+    <div id="Wrap04">
+        <button id="myBtn" onclick="topFunction()"></button>
+        <div id="Wrap04Centre">
+            <div id="WBLCopyright">Xavier College Fiji | All Rights Reserved<br /> Webdesigner: <a href="http://about.me/siddhanthmani" target="_blank">siddhanth mani</a> &copy; 2022 <br/>
+			<a href="http://www.education.gov.fj/">...MINISTRY  OF  EDUCATION  FIJI...</a>
+			</div>
+        </div>
+    </div>
 </body>
+<!-- InstanceEnd -->
+
 </html>

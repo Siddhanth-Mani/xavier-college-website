@@ -1,0 +1,6 @@
+/* Small presentation fixes added in 2026; the original design is in Template.css and menuCss.css. */
+.student-note{background:#1E37A4;color:#fff;font:13px/1.5 Arial,Helvetica,sans-serif;text-align:center;padding:6px 12px;letter-spacing:.2px}
+.student-note a{color:#fff;font-weight:bold;text-decoration:underline}
+#slider1_container{overflow:hidden}
+img{max-width:100%;height:auto}
+#slider1_container img{max-width:none}

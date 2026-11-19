@@ -1,317 +1,743 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Programmes · Xavier College Ba, Fiji</title>
-    <link rel="shortcut icon" href="Images/favicon1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/apple-theme.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="CSS/Template.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/menuCss.css" />
+        <link rel="shortcut icon" href="Images/favicon1.jpg" type="favicon1/x-icon" />
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Xavier College</title>
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
     <style>
-        .prog-banner-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-        }
-        .prog-banner-item {
-            background: #ffffff;
-            border: 1px solid var(--apple-card-border);
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-            text-align: center;
-        }
-        .prog-banner-item img {
+        #Wrap03 {
+            position: relative;
             width: 100%;
-            max-height: 480px;
-            object-fit: contain;
-            background-color: #fafafc;
+            background-image: url(Images/BlueTexture2.jpg);
+            background-repeat: repeat;
         }
-        .activity-card {
-            background: #ffffff;
-            border: 1px solid var(--apple-card-border);
-            border-radius: 14px;
-            padding: 1.75rem;
-            display: flex;
-            flex-direction: column;
-            box-shadow: var(--apple-card-shadow);
-        }
-        .activity-card h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--apple-navy);
-            margin-bottom: 0.5rem;
-        }
-        .activity-tag {
-            display: inline-block;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            color: var(--apple-blue);
-            margin-bottom: 0.75rem;
-        }
-        .activity-card p {
-            font-size: 0.92rem;
-            color: var(--apple-text-secondary);
-            line-height: 1.6;
+
+        #Wrap03Centre {
+            height: 1100px;
+            width: 980px;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            top: 0px;
         }
     </style>
-</head>
-<body>
-
-    <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="brand-link">
-                <img src="logo.jpg" alt="Xavier College Crest" class="brand-logo" onerror="this.src='Images/favicon1.jpg'">
-                <div class="brand-text">
-                    <span class="brand-name">Xavier College</span>
-                    <span class="brand-location">Ba, Fiji · Est. 1953</span>
-                </div>
-            </a>
-
-            <nav>
-                <ul class="primary-nav" id="primaryNav">
-                    <li class="nav-item ">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown">
-                            <li><a href="about.html" class="dropdown-link">The College & History</a></li>
-                            <li><a href="about.html#location" class="dropdown-link">Location & Map</a></li>
-                            <li><a href="about.html#contact" class="dropdown-link">Contact Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="DScience.html" class="nav-link">Departments <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown wide">
-                            <li><a href="DLanguage.html" class="dropdown-link ">Language</a></li>
-                            <li><a href="DMaths.html" class="dropdown-link ">Maths & Physics</a></li>
-                            <li><a href="DScience.html" class="dropdown-link ">Science</a></li>
-                            <li><a href="DSocial.html" class="dropdown-link ">Social Science</a></li>
-                            <li><a href="DHome.html" class="dropdown-link ">Home Economics</a></li>
-                            <li><a href="DComputer.html" class="dropdown-link ">Office Tech & Comp</a></li>
-                            <li><a href="DPemac.html" class="dropdown-link ">PEMAC</a></li>
-                            <li><a href="DIndustrial.html" class="dropdown-link ">Industrial Arts</a></li>
-                            <li><a href="DCommence.html" class="dropdown-link ">Commerce</a></li>
-                            <li><a href="DAgriculture.html" class="dropdown-link ">Agriculture</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="achievements.html" class="nav-link">School Programmes</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="Resources.html" class="nav-link">Resources <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown">
-                            <li><a href="Resources.html" class="dropdown-link">Ministry Portals</a></li>
-                            <li><a href="Resources.html#learning" class="dropdown-link">Online Learning Tools</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="photos.html" class="nav-link">Gallery <span class="chevron">▾</span></a>
-                        <ul class="nav-dropdown">
-                            <li><a href="photos.html#campus" class="dropdown-link">Campus</a></li>
-                            <li><a href="photos.html#memories" class="dropdown-link">Memories</a></li>
-                            <li><a href="photos.html#sports" class="dropdown-link">Inter-House</a></li>
-                            <li><a href="photos.html#awards" class="dropdown-link">Awards</a></li>
-                            <li><a href="photos.html#cadets" class="dropdown-link">Cadets</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <section class="page-hero">
-        <div class="page-hero-inner">
-            <nav class="breadcrumb">
-                <a href="index.html">Home</a> <span>/</span> <span>School Programmes</span>
-            </nav>
-            <h1 class="page-title">School Programmes & Student Life</h1>
-            <p class="page-subtitle">Nurturing holistic development through academic engagement, athletic competition, and disciplined co-curricular activities.</p>
-        </div>
-    </section>
-
-    <main class="main-content">
-
-        <!-- Program Overview Section -->
-        <article class="apple-card">
-            <div class="card-header">
-                <div>
-                    <span class="card-eyebrow">Academic Scope</span>
-                    <h2 class="card-title">What Are School Programmes?</h2>
-                </div>
-            </div>
-            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.25rem;">
-                School programs encompass all school-sponsored and approved activities, events, and functions — on or off school premises — where students are under the guidance and leadership of Xavier College educators and staff. These programs are structured alongside the scholastic curriculum to foster character, teamwork, and personal responsibility.
-            </p>
-            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75;">
-                From national curriculum subjects to co-curricular disciplines, Xavier College provides diverse learning tracks ensuring each student develops both cognitive knowledge and practical life skills.
-            </p>
-        </article>
-
-        <!-- Programme Banners / Showcase -->
-        <article class="apple-card">
-            <div class="card-header">
-                <div>
-                    <span class="card-eyebrow">Programme Visuals</span>
-                    <h2 class="card-title">School Events & Programmes Showcase</h2>
-                </div>
-                <span style="font-size:0.8rem; color:var(--apple-text-tertiary);">Documented College Activities</span>
-            </div>
-
-            <div class="prog-banner-grid">
-                <div class="prog-banner-item">
-                    <img src="sidd1.png" alt="School Programmes Highlight 1" onerror="this.style.display='none'">
-                </div>
-                <div class="prog-banner-item">
-                    <img src="Sidd2.png" alt="School Programmes Highlight 2" onerror="this.style.display='none'">
-                </div>
-                <div class="prog-banner-item">
-                    <img src="sidd3.png" alt="School Programmes Highlight 3" onerror="this.style.display='none'">
-                </div>
-                <div class="prog-banner-item">
-                    <img src="sidd4.png" alt="School Programmes Highlight 4" onerror="this.style.display='none'">
-                </div>
-                <div class="prog-banner-item">
-                    <img src="sidd5.png" alt="School Programmes Highlight 5" onerror="this.style.display='none'">
-                </div>
-            </div>
-        </article>
-
-        <!-- Co-Curricular Overview Section -->
-        <article class="apple-card">
-            <div class="card-header">
-                <div>
-                    <span class="card-eyebrow">Beyond the Classroom</span>
-                    <h2 class="card-title">Co-Curricular Activities & Sports</h2>
-                </div>
-            </div>
-            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.25rem;">
-                There are diverse activities a student at Xavier College can participate in. Our school actively competes in <strong>Soccer</strong> across Under 15, Under 17, and Under 19 divisions, as well as in <strong>Rugby</strong> across the same age grades. <strong>Netball</strong> is enthusiastically played by our female students, competing in district and national secondary school championships.
-            </p>
-            <p style="font-size:1rem; color:var(--apple-text-secondary); line-height:1.75; margin-bottom:1.5rem;">
-                <strong>Athletics</strong> is a cornerstone of our school calendar, culminating in the annual <em>Inter-House Athletics Competition</em> where the four college houses vie for the prestigious championship shield. Furthermore, service clubs like the <strong>DEAR Club</strong> engage in literacy and community service projects, while our military cadet detachment instills lifelong discipline and leadership.
-            </p>
-
-            <!-- 6 Structured Activity Cards -->
-            <div class="grid-2">
-                <div class="activity-card">
-                    <span class="activity-tag">Discipline & Leadership</span>
-                    <h3>Cadets Training (RFMF)</h3>
-                    <p>
-                        Students are instilled with discipline and civic responsibility through formal cadet training conducted in partnership with the Republic of Fiji Military Forces (RFMF). This training builds resilience, teamwork, mutual respect, and pride, concluding in the annual Passout Parade inspected by military commanders.
-                    </p>
-                </div>
-
-                <div class="activity-card">
-                    <span class="activity-tag">Academic Expression</span>
-                    <h3>Annual Theme Presentations</h3>
-                    <p>
-                        Every academic year, year levels are assigned an overarching theme. Students prepare collaborative oral and multimedia presentations showcased to the entire student body and faculty in the college auditorium, developing public speaking and creative coordination.
-                    </p>
-                </div>
-
-                <div class="activity-card">
-                    <span class="activity-tag">Social Service</span>
-                    <h3>Interform & St. Vincent Society</h3>
-                    <p>
-                        Organized under the patronage of St. Vincent de Paul, students initiate charitable fundraising through sporting matches and social drives. Participation nurtures empathy, independence, and an understanding of the broader community.
-                    </p>
-                </div>
-
-                <div class="activity-card">
-                    <span class="activity-tag">Physical Wellbeing</span>
-                    <h3>College Gymnasium & Fitness</h3>
-                    <p>
-                        The college gym gives students a space to train, stay active, and build fitness habits that carry well beyond school. Regular exercise also helps with focus and endurance in the classroom.
-                    </p>
-                </div>
-
-                <div class="activity-card">
-                    <span class="activity-tag">Student Empowerment</span>
-                    <h3>Students' Day Celebrations</h3>
-                    <p>
-                        At the end of Term 1, students take charge and run the day themselves — performances, speeches, games, and celebrations that bring the whole school together. It's one of the highlights of the year.
-                    </p>
-                </div>
-
-                <div class="activity-card">
-                    <span class="activity-tag">Creative Competition</span>
-                    <h3>Department Events & Exhibitions</h3>
-                    <p>
-                        Each term, different departments run their own events — science quizzes, writing competitions, maths challenges, art shows. Students get to shine outside of regular exams and find out what they're really good at.
-                    </p>
-                </div>
-            </div>
-        </article>
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h4>Xavier College, Ba</h4>
-                    <p>A Catholic secondary school dedicated to developing upright, creative, and compassionate leaders through holistic education in Fiji since 1953.</p>
-                    <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--apple-gold); font-weight:600;">
-                        "Do Your Best and Leave the Rest to God"
-                    </p>
-                </div>
-                <div class="footer-col">
-                    <h5>Quick Navigation</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About College</a></li>
-                        <li><a href="achievements.html">School Programmes</a></li>
-                        <li><a href="Resources.html">Online Resources</a></li>
-                        <li><a href="photos.html">Photo Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Departments</h5>
-                    <ul class="footer-links">
-                        <li><a href="DLanguage.html">Language Department</a></li>
-                        <li><a href="DMaths.html">Maths & Physics</a></li>
-                        <li><a href="DScience.html">Science Department</a></li>
-                        <li><a href="DSocial.html">Social Science & Geog</a></li>
-                        <li><a href="DComputer.html">Office Tech & Computer</a></li>
-                        <li><a href="DCommence.html">Commerce Department</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-contact">
-                    <h5>Contact Information</h5>
-                    <p><strong>Address:</strong> Namosau, Ba, Fiji Islands</p>
-                    <p><strong>Phone:</strong> +679 667 0342</p>
-                    <p><strong>Email:</strong> <a href="mailto:xaviercollege198@gmail.com">xaviercollege198@gmail.com</a></p>
-                    <p style="margin-top:0.6rem;">
-                        <a href="http://www.education.gov.fj/" target="_blank" rel="noopener">Ministry of Education Fiji ↗</a>
-                    </p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 Xavier College Fiji. All rights reserved. &nbsp;·&nbsp; Webdesigner: <a href="https://about.me/siddhanthmani" target="_blank" rel="noopener">Siddhanth Mani</a></p>
-                <p>Catholic Archdiocese of Suva &nbsp;·&nbsp; Western Division, Fiji</p>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Mobile navigation toggle
-        const toggleBtn = document.getElementById('mobileToggle');
-        const navMenu = document.getElementById('primaryNav');
-        if (toggleBtn && navMenu) {
-            toggleBtn.addEventListener('click', () => {
-                navMenu.classList.toggle('open');
-            });
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" type="text/css" href="CSS/fixes.css" />
+
+
+<body>
+<div class="student-note">Student project by <a href="https://siddhanth.ryzn.pro/">Siddhanth Mani</a> (high school, 2022). This is not the official Xavier College website.</div>
+    <div id="Wrap01">
+        <div id="Wrap01Centre">
+            <img src="logo.jpg" alt="school logo" width="150" height="150">
+            <div id="mainHeading">XAVIER COLLEGE</div>
+        </div>
+    </div>
+    <div id="Wrap02">
+        <div id="Wrap02Centre">
+            <div id="MenuPosition">
+                <ul id="menu">
+                     <li><a href="index.html">HOME</a></li>
+                  
+                    <li><a href="">ABOUT</a>
+                        <ul>
+                            <li><a href="about.html">College</a></li>
+                           
+                            
+                            
+                        </ul>
+                    </li>
+                    <li><a href="">Departments</a>
+                        <ul>
+                          
+                           
+                            <li><a href="">Departments</a>
+                                <ul>
+                                    <li><a href="DLanguage.html">Language</a></li>
+                                    <li><a href="DMaths.html">Maths/Physics</a></li>
+                                    <li><a href="DScience.html">Science</a></li>
+                                    <li><a href="DSocial.html">Social Science</a></li>
+                                    <li><a href="DHome.html">Home Economics</a></li>
+                                    <li><a href="DComputer.html">Office Technologies</a></li>
+                                    <li><a href="DPemac.html">PEMAC</a></li>
+                                    <li><a href="DIndustrial.html">Industrial Arts</a></li>
+                                    <li><a href="DCommence.html">Commerce</a></li>                                   
+                                    <li><a href="DAgriculture.html">Argriculture</a></li>
+
+                                </ul>
+                            </li>
+                            
+                                <ul>
+                                   
+                                   
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </li>
+					
+                    <li><a href="achievements.html">SCHOOL PROGRAMMES</a></li>
+					 
+					 
+					 
+					 <li><a href="Resources.html">RESOURCES</a>
+                        <ul>
+                            <li><a href="Resources.html">useful links</a></li>
+                           
+                            
+                            
+                        </ul>
+                    </li>
+					
+					
+					
+                    <li><a href="">GALLERY</a>
+                        <ul>
+                            
+                            <li><a href="photos.html">Photos</a></li>
+                        </ul>
+                    </li>
+                   
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- InstanceBeginEditable name="EditRegionSilder" -->
+    <!-- InstanceEndEditable -->
+
+
+
+
+    <div id="Wrap03">
+        <div id="Wrap03Centre">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td></td>
+                    <td width="100%" valign="top">
+                        <!-- InstanceBeginEditable name="EditRegion3" -->
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="Font10">
+                            <tr>
+                                <td width="45%">&nbsp;</td>
+                                <td width="4%">&nbsp;</td>
+                                <td width="51%">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div id="TitleBar">SCHOOL PROGRAMMES</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font30">WHAT ARE SCHOOL PROGRAMMES?</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font10Blue">School programs are any school sponsored or approved activity, event or function, on or off school premises where students are under the jurisdiction of the School;
+								                              or during any period of time school employees are supervising students on behalf of the School or are otherwise engaged in school business.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font30">WHAT ARE EXAMPLES OF ACADEMIC PROGRAMS?</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font10Blue">Academic programs are organized into 10 colleges and one independent school: Aeronautics and Engineering; Architecture and Environmental Design; Arts and Sciences; the Arts;
+								Business Administration; Communication and Information; Education, Health and Human Services; Nursing; Podiatric Medicine; and Public Health.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center" valign="top" class="Font20">
+                                    <p></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center"><img src="Images/StaffsImages/2019/06.jpg" width="120" height="135" /></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font10">
+								
+                                  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p>PROGRAMMES</p>
+									
+									
+									 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+							
+							
+							
+                            <tr>
+							
+							
+							<td colspan="3" align="center"><img src="sidd1.png" width="1000" height="550" /></td>
+							
+							
+							
+							
+                                <td colspan="3" align="center" valign="top" class="Font20">
+								
+								
+								
+							 <tr/>
+							 
+							
+							
+							
+							<td colspan="3" align="center"><img src="Sidd2.png" width="1000" height="550" /></td>
+							
+							
+							
+							
+                                <td colspan="3" align="center" valign="top" class="Font20">
+
+                                </td>
+                            </tr>	
+							
+							<br>
+							<br> 
+							<br>
+							
+						 <tr>
+							
+							
+							<td colspan="3" align="center"><img src="sidd3.png" width="1000" height="550" /></td>
+							
+							
+							
+							
+                                <td colspan="3" align="center" valign="top" class="Font20">
+
+                                </td>
+                            </tr>	
+							
+							
+							<br/>
+							<br/>
+						
+
+ <tr>
+							
+							
+							<td colspan="3" align="center"><img src="sidd4.png" width="1000" height="550" /></td>
+							
+							
+							
+							
+                                <td colspan="3" align="center" valign="top" class="Font20">
+
+
+
+
+
+
+
+                                </td>
+                            </tr>						
+							 </td>
+								
+								
+								
+								
+								
+							 <tr>
+							
+							
+							<td colspan="3" align="center"><img src="sidd5.png" width="1000" height="550" /></td>
+							
+							
+							
+							
+                                <td colspan="3" align="center" valign="top" class="Font20">
+								
+								
+								
+							 <tr/>	
+								
+								
+								
+						  <tr>
+                                <td colspan="3" class="Font30"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+							 <tr>
+                                <td colspan="3" align="center" valign="top" class="Font20">
+                                    <p> CO-CURRICULAR ACTIVITES </p>
+                                </td>
+                            </tr>
+							
+							
+							
+							
+							
+							
+						
+							
+                                <td colspan="3" class="Font10Blue">There are various activites a student at Xavier College can participate in. Our school actively take parts in Soccer under 15, under 17, under 19. As well as in Rugby in the same categories.Netball is also an actively participated sport enjoyed by the female students of the college.</BR>
+								</BR>Athletics is a major part of our institude where almost the entire school participates in an athletics competition famously known as the Inter-House Athletics Competitions where the Four houses of the college try their level best to secure the trophy for their own house. Our school also has a club known as the DEAR Club which engages in activites regarding the School and the Community.
+								Our College takes part in Cadets to facilitate discipline into one's character preparing them for their future livelihood. </BR>
+								</BR>Co-curricular activities fuel your learning by stimulating creative thought, improving your social and organizational skills, developing your interests and talents, and offering you the chance to switch off and do something you really enjoy. </BR>
+								</BR> School activities play a significant part in the development of students. Co-curricular activities have become a fundamental part of school life and aides in improving students learning at school. These activities are mandatory & necessary for every student to participate in. </BR>
+								</BR>Co-curricular are structured and balanced with the scholastic educational/ academic curriculum so that every student gets the opportunity to learn beyond studies.
+            <br>
+			<br>
+			<section class="container">
+			
+ 			<div class="card">
+ 				<div class="card-image cadets"></div>
+ 				<h2>Cadets</h2>
+ 				<p class="caption">Students are instilled discipline through formal cadet training by the Republic of Fiji Military Forces (RFMF).  cadet experience offers young people the opportunity to develop valuable personal abilities, build life skills like teamwork and resilience, and fosters confidence, loyalty and respect, and a sense of service to others.  Students are trained to put on a show for the officers in command known as the passout parade.</p >
+ 			</div>
+			<br>
+			<br>
+
+ 			<div class="card">
+ 				<div class="card-image presentation"></div>
+ 				<h2>Theme Presentation</h2>
+ 				<p  class="caption">  themes give you a quick and easy way to change the design of your presentation. They control your primary color palette, basic fonts, slide layout, and other important elements. Every year is assigned a theme of their picking and are given time to prepare.  They later present their preperations to the college in the auditorium</p >
+ 			</div>
+<br>
+<br>
+ 			<div class="card">
+ 				<div class="card-image saintvincent"></div>
+ 				<h2>Interform</h2>
+ 				<p  class="caption">Organised by Saint Vincent, students take special initiative of helping people in need by fund raising through sporting events. Taking part in these out-of-the-classroom activities helps students to understand the importance of critical thinking skills, time management, and academic and intellectual competence. Involvement in activities helps students mature socially by providing a setting for student interaction, relationship formation, and discussion. Working outside of the classroom with diverse groups of individuals allows for students to gain more self-confidence, autonomy, and appreciation for others' differences and similarities. This is known as "interform".</p >
+ 			</div>
+<br>
+			<br>
+ 			<div class="card">
+ 				<div class="card-image gym"></div>
+ 				<h2>Gym</h2>
+ 				<p  class="caption">Xavier College is equipped with a Gym.  It helps them to develop both gross and fine motor skills and aids in the development of their brains as well as their growing bodies. “The activities that make up gym classes have a positive effect on the moods of students who may have been sitting inside studying and feeling restless.</p >
+ 			</div>
+<br>
+			<br>
+ 			<div class="card">
+ 				<div class="card-image studentsday"></div>
+ 				<h2>Students Day</h2>
+ 				<p  class="caption">At the end of term 1 a celebration is held.  This is organised by the students, known as "students day".  This event aims to recognize and celebrate the significant role of students in the country's thrust for nation-building. It will highlight their stories of passion, advocacy, and empowerment, and will emphasize the impact and importance of nurturing learners for a better tomorrow.</p >
+ 			</div>
+			<br>
+			<br>
+			<div class="card">
+ 				<div class="card-image departmentevent"></div>
+ 				<h2>Department Events</h2>
+ 				<p  class="caption"> It acts as an attention-grabbing hook, strengthening your audience's engagement and increasing the chances of them remembering this event over others. A successful event provides value to attendees beyond information about a product or service. Different school departments host different events that allow all years to compete through creative ways such as paintings, essays and many more.</p >
+ 			</div>
+			</section>
+							
+			</BR>					
+				</BR>"A life is bookended by forgetting, as though memory forms the tunnel that leads into and out of a human body. - Author: Sarah Hepola"		</BR>		
+								
+								
+								
+								</td>
+                            </tr>
+							
+							
+							
+							
+                            <tr>
+                                <td colspan="3" align="center" valign="top" class="Font20">
+                                    <p>  </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>		
+								
+								
+								
+								
+								
+								
+								
+								
+								
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="Font10"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                           
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center"></td>
+                            </tr>
+                        </table>
+                        <!-- InstanceEndEditable -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	
+	
+	
+	
+    <div id="Wrap04">
+        <button id="myBtn" onclick="topFunction()"></button>
+        <div id="Wrap04Centre">
+             <div id="WBLCopyright">Xavier College Fiji | All Rights Reserved<br /> webdesigner: <a href="https://about.me/siddhanthmani" target="_blank">siddhanth mani</a> &copy; 2022 <br/>
+<a href="http://www.education.gov.fj/">...MINISTRY  OF  EDUCATION  FIJI...</a>
+			 </div>
+            </div>
+    </div>
 </body>
+<!-- InstanceEnd -->
+
 </html>

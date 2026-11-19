@@ -1,34 +1,5 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.env
-
-# Node / build
-node_modules/
-dist/node_modules/
-
-# OS files
-.DS_Store
 Thumbs.db
-desktop.ini
-
-# Editor
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Logs
-*.log
-
-# ngrok binary (don't commit executables)
-ngrok.exe
-
-# Large binary / office docs that don't need versioning
+.DS_Store
+*.exe
 *.docx
 *.pdf
